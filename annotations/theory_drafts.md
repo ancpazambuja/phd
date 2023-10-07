@@ -3,9 +3,16 @@
 ## Probability
 Formally (somewhat), Kolmogorov defined these axioms below:
 
-- K0: a non-deterministic experiment can be described by the probability space $(\Omega, \mathcal{F}, \mathcal{P})$, where:
-   $\Omega$ is the sample space, $\mathcal{F} is the set of parts of $\Omega$ and $\mathcal{P}$ is the probability function
-  $\mathcal{...... to do .....}$
+- K0: a non-deterministic experiment can be described by the probability space $(\Omega, \mathcal{F}, P)$, where:
+  - $\Omega$ is the sample space (set of possible outcomes),
+  - $\mathcal{F}$ is the set of possible events ( $\mathcal{P}(\Omega)$ ) and
+  - $P: \mathcal{F} \rightarrow \mathbb{R}$ is the probability function.
+
+- K1: Non-negativity::  $P(A) \geq 0, \forall A \in \mathcal{F}$ is the probability function.
+
+- K2:
+- K3:
+- K4:
 
   
 ### Classical view
