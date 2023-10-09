@@ -10,16 +10,52 @@ Formally (somewhat), Kolmogorov defined these axioms below:
 
 - K1: Non-negativity::  $P(A) \geq 0, \forall A \in \mathcal{F}$ is the probability function.
 
-- K2:
-- K3:
-- K4:
+- K2: Unit normalization:: $P(\Omega) = 1$
+  
+- K3: Aditivity:: $A \cap B = \varnothing \rightarrow P(A \cup B) = P(A) + P(B)$
+
+- K4: $\sigma$-Aditivity:: if $A_i$ are disjoint sets:
+
+  $P({\bigcup}_{i=1}^{\infty}A_i) = P(A_1) + P(A_2) + \cdots =$
+  
+  ${\sum}_{i=1}^{\infty}P(A_i)$
 
   
 ### Classical view
-Equiprobable outcomes -> Pr(/omega /in /Omega) = frac{1,#/Omega}
+**Laplace (1814)**
 
-### Frequentist
-F(x) -> Cumulative Distribution Function (CDF)
+For equiprobable outcomes, $P(a \in \Omega) = \frac{1}{|\Omega|}$. 
+Thus, we use tools such as combinatorial analysis and set theory to count the number of outcomes in some event $A \in \mathcal{F}$ 
+in order to calculate:
+
+$P(A) = \frac{|A|}{|\Omega|}$ 
+
+or 
+
+$P(A|B) = \frac{P(A \cap B)}{P(B)}$
+
+### Frequentist view
+**Venn (1876)**
+
+#### Discrete events
+When outcomes are not equiprobable, one can count outcomes frequencies (histograms) in the limit of infinity experiments.
+
+We use the notion of n-sample to describe a population.
+
+Then, we have:
+
+$P(A) = \frac{n(A)}{n}$
+
+or 
+
+$P(A|B) = \frac{n(A \cap B)}{n(B)}$
+
+where $n(A)$ is the number of times A has happened in the sample.
+
+
+#### Continuous events 
+
+In order to have to find out The F(x) -> Cumulative Distribution Function (CDF)
 
 and
 
