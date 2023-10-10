@@ -1,4 +1,4 @@
-# Some annotation from my studies
+# Some annotations from my studies
 
 ## Probability
 Formally (somewhat), Kolmogorov defined these axioms below:
