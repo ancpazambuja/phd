@@ -14,7 +14,7 @@ Formally (somewhat), Kolmogorov defined these axioms below:
   
 - K3: Aditivity:: $A \cap B = \varnothing \rightarrow P(A \cup B) = P(A) + P(B)$
 
-- K4: $\sigma$-Aditivity:: if $A_i$ are disjoint sets:
+- K4: $\sigma$-Aditivity:: if $A_i$ are pairwise disjoint sets:
 
   $P({\bigcup}_{i=1}^{\infty}A_i) = P(A_1) + P(A_2) + \cdots =$
   
