@@ -91,7 +91,13 @@ $$F(x) = P(X < x) = {\int}_{-\infty}^{x} f(x')dx'$$
 
 **Probability Distribution Function (PDF)**
 
-$$f(x) = F'(x)$$
+From the __fundamental theorem of calculus__:
+
+$$f(x) = F'(x) = {\lim}_{dx \rightarrow 0}\frac{F(x+dx) - F(x)}{dx} = $$
+
+$$={\lim}_{dx \rightarrow 0}\frac{P(X < x+dx)- P(X < x)}{dx} = $$
+
+$$={\lim}_{dx \rightarrow 0}\frac{P(x \leq X < x + dx)}{dx} $$
 
 **Notes**
 
@@ -99,7 +105,7 @@ We can use the CDF inverse to compute quantiles.
 
 We can use PDFs to compute the probability:
 
-$$P(x-dx \leq X \leq x+dx ) = f(x) = f(X=x)$$
+$$P(x \leq X < x+dx ) \approx f(x) = f(X=x)$$
 
 
 ### For Discrete Events
