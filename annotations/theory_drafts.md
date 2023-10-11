@@ -8,81 +8,105 @@ Formally (somewhat), Kolmogorov defined these axioms below:
   - $\mathcal{F}$ is the set of possible events ( $\mathcal{P}(\Omega)$ ) and
   - $P: \mathcal{F} \rightarrow \mathbb{R}$ is the probability function.
 
-- K1: Non-negativity::  $P(A) \geq 0, \forall A \in \mathcal{F}$ is the probability function.
+- K1: Non-negativity::
+  $$P(A) \geq 0, \forall A \in \mathcal{F}$$
 
-- K2: Unit normalization:: $P(\Omega) = 1$
+- K2: Unit normalization::
+  
+  $$P(\Omega) = 1$$
   
 - K3: Aditivity:: $A \cap B = \varnothing \rightarrow P(A \cup B) = P(A) + P(B)$
 
 - K4: $\sigma$-Aditivity:: if $A_i$ are pairwise disjoint sets:
 
-  $P({\bigcup}_{i=1}^{\infty}A_i) = P(A_1) + P(A_2) + \cdots =$
+  $$P({\bigcup}_{i=1}^{\infty}A_i) =$$
+
+  $$= P(A_1) + P(A_2) + \cdots = $$
   
-  ${\sum}_{i=1}^{\infty}P(A_i)$
+  $$= {\sum}_{i=1}^{\infty}P(A_i)$$
+
+### Random Variables
+A random variable is a collection of outcomes from an experiment run several times under the same conditions. The outcomes are non-deterministic. 
+
+A random variable X can be defined by enumeration: 
+
+$X = ${ $x_1, x_2, x_3, x_4, ..., x_N$ } from which we can build a histogram. In this context,
+we can define: 
+
+$P(X=x_i) = \frac{hist(x_i)}{N}$
+
+For example, if we consider a fair die, we have:
+
+$$\Omega = \\{ 1, 2, 3, 4, 5, 6 \\}$$
+
+And we can think a random variable X as the result of rolling a die several times:
+
+$$X = \\{ 2, 4, 2, 1, 5, 3, 4, 5, 6, 1, 6, 3 \\}$$ 
+
+And we may ask the probability of getting an odd number:
+
+$$P(X \text{ is odd}) = P( \\{1\\} \cup \\{3\\} \cup \\{5\\} )$$
+
+**Note:** "X is odd" is an event (e.g. $A=${1, 3, 5}).
 
   
-### Classical view
+### Classical View of Probability
 **Laplace (1814)**
 
 For equiprobable outcomes, $P(a \in \Omega) = \frac{1}{|\Omega|}$. 
 Thus, we use tools such as combinatorial analysis and set theory to count the number of outcomes in some event $A \in \mathcal{F}$ 
 in order to calculate:
 
-$P(A) = \frac{|A|}{|\Omega|}$ 
+$$P(A) = \frac{|A|}{|\Omega|}$$ 
 
 or 
 
-$P(A|B) = \frac{P(A \cap B)}{P(B)}$
+$$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
 
-### Frequentist view
+### Frequentist View of Probability
 **Venn (1876)**
 
-#### Discrete events
 When outcomes are not equiprobable, one can count outcomes frequencies (histograms) in the limit of infinity experiments.
 
-We use the notion of n-sample to describe a population.
+We use the notion of n-sample to describe a population. A n-sample is a random variable. 
 
-Then, we have:
+Then, if we have a random variable $X = ${ $x_1, x_2, x_3, x_4, ..., x_N$ }$, we can write:
 
-$P(A) = \frac{n(A)}{n}$
+$$P(A) = \frac{n(A)}{n}$$
 
 or 
 
-$P(A|B) = \frac{n(A \cap B)}{n(B)}$
+$$P(A|B) = \frac{n(A \cap B)}{n(B)}$$
 
 where $n(A)$ is the number of times A has happened in the sample.
 
 
-#### Continuous events 
+#### For Continuous Events 
 
-In order to have to find out The F(x) -> Cumulative Distribution Function (CDF)
+One way to extend probability to continuous events is not defining a random variable by enumeration, but define it 
+in terms of special functions. 
 
-and
+**Cumulative Distribution Function (CDF)**
 
-f(x) = F'(x) -> Probability Density Function (PDF)
+$$F(x) = P(X < x) = {\int}_{-\infty}^{x} f(x')dx'$$
 
-or 
+**Probability Distribution Function (PDF)**
 
-p(x) -> Probability Mass Function (PMF)
+$$f(x) = F'(x)$$
 
-Pr(X)
+**Notes**
 
-#### Note
-Frequentist Probability may also be describe as:
+We can use CDFs to compute quantiles.
 
-Pr(A) = 
+We can use PDFs to compute the probability:
+
+$$P(x-dx \leq X \leq x+dx ) = f(x) = f(X=x)$$
 
 
-## Random Variables
-A random variable is a collection of outcomes from an experiment run several times under the same conditions. The outcomes are non-deterministic. 
+#### For Discrete Events
+The same approach above can be used for discrete random variables.
 
-A random variable X can be defined by enumeration: 
+**Probability Mass Function (PMF)**
 
-X = {x1, x2, x3, x4, ..., xN} from which we can build a histogram. In this context,
-we can define: 
-
-Pr(X=xi) = hist(xi) / N
-
-as a collection
-Two main views
+$$p(x) = P(X=x)$$
 
