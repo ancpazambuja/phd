@@ -95,7 +95,7 @@ $$f(x) = F'(x)$$
 
 **Notes**
 
-We can use CDFs to compute quantiles.
+We can use the CDF inverse to compute quantiles.
 
 We can use PDFs to compute the probability:
 
