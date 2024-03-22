@@ -25,4 +25,4 @@ $$R(s_0,a_0)$$
 
 ## MORE
 
-
+[inf2070.trabalho.final.artigo.pdf](https://github.com/ancpazambuja/phd/files/14728608/inf2070.trabalho.final.artigo.pdf)
