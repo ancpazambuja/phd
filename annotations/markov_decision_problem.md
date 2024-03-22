@@ -22,3 +22,7 @@ We can formally define an MDP with following elements:
 The main of the agent is maximize the discounted future reward function:
 
 $$R(s_0,a_0)$$
+
+## MORE
+
+
