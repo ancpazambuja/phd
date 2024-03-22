@@ -1,1 +1,1 @@
-# Just some drafts - possible unfinished ones
+# Just some drafts - possibly unfinished ones
