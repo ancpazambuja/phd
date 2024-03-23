@@ -60,7 +60,7 @@ From an information theory point of view, Cover demonstrate that a single percep
 It expresses the number of homogeneously linearly separable sets of $N$ points in $D$ dimensions as an explicit counting function $C(N,D)$, since the points are in [general position](https://en.wikipedia.org/wiki/General_position).
 
 $$
-C(N,D) = 2 \sum_{i=0}^{D-1}\big \dfrac{N-1}{i}
+C(N,D) = 2 \sum_{i=0}^{D-1}{{N-1}\choose{i}}
 $$
 
 
