@@ -57,17 +57,17 @@ The perceptron was intended to be a machine but it was first simulated algorithm
 From an information theory point of view, Cover demonstrate that a single perceptron with k vectors $x_i, i \in [k]$ has a capacity of $2k$ bits of information.
 
 #### Cover's Theorem or Cover's Couting Function Theorem
-It expresses the number of homogeneously linearly separable sets of $N$ points in $D$ dimensions as an explicit counting function $C(N,D)$, since the points are in [general position](https://en.wikipedia.org/wiki/General_position).
+It expresses the number of homogeneously linearly separable sets of $N$ points in $D$ dimensions as an explicit counting function $C(N,D)$, since the points are in [general position](https://en.wikipedia.org/wiki/General_position) \footnote{Random points are almost surely in general position while real world data points have low probability of being in general position because most of time there is a formation rule based in lower dimension}.
 
 $$
 C(N,D) = 2 \sum_{i=0}^{D-1}{{N-1}\choose{i}}
 $$
 
+If $N <= D+1$, the function is exponential in $N$. It means that any set of labelled points in general position is linearly separable. In other words, we can say the set o hyperplanes embedded in D-space [shatters](https://en.wikipedia.org/wiki/Shattered_set) any point set.
 
-
-
-
-
+If $N > D+1$, the function grows less than exponentially. It means two things:
+ + with fixed $N$, random generated set of points is more likely to be linear separable when $D$ increases;
+ + with fixed $D$, it becomes less likely to find a linear separable set of random generated points when $N$ increases.
 
 
 
