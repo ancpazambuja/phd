@@ -74,9 +74,7 @@ If $N > D+1$, the function grows less than exponentially. It means two things:
 
 It is interesting to analyse the ratio $\frac{C(N,D)}{2^N}$. The graphic above shows this relation.
 
-![cover theorem jpg](https://github.com/ancpazambuja/phd/assets/36957087/1d0c9bdc-41e2-43f2-aeed-b50655061b8f)
-
-
+![cover theorem_1 jpg](https://github.com/ancpazambuja/phd/assets/36957087/2a71990c-5f7b-40ba-b95e-6339fd85a62d)
 
 ### Minsky and Papert
 **1969 - Perceptrons: an introduction to computational geometry**
