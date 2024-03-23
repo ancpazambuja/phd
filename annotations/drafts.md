@@ -54,7 +54,7 @@ The perceptron was intended to be a machine but it was first simulated algorithm
 ### Thomas M. Cover
 **1964 - Geometrical and Statistical Properties of Linear Threshold Devices**
 
-From an information theory point of view, Cover demonstrated that a single perceptron with k vectors $x_i; i \in [k]$ has a capacity of $2k$ bits of information.
+From an information theory point of view, Cover demonstrated that a single perceptron with N vectors $x_i; i \in [N], x_i \in \mathbb{R}^D$ has a capacity of $2k$ bits of information.
 
 #### Cover's Theorem or Cover's Couting Function Theorem
 It expresses the number of homogeneously linearly separable sets of $N$ points in $D$ dimensions as an explicit counting function $C(N,D)$, since the points are in [general position](https://en.wikipedia.org/wiki/General_position) \footnote{Random points are almost surely in general position while real world data points have low probability of being in general position because most of time there is a formation rule based in lower dimension}.
