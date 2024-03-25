@@ -47,7 +47,7 @@ $$
 
 ![650px-Dirac_distribution_CDF svg](https://github.com/ancpazambuja/phd/assets/36957087/85d6d1b6-4c2f-41c5-8f97-652eb9a6b162)
 
-The perceptron is also known as a single-layer perceptron and it is the simples feedfoward neural network. 
+The perceptron is also known as a single-layer perceptron and it is the simplest feedfoward neural network. 
 
 The perceptron was intended to be a machine but it was first simulated algorithmically on a IBM 704 and after that implemented in custom-built hardware as the "Mark I Perceptron". 
 
@@ -72,7 +72,7 @@ If $N > D+1$, the function grows less than exponentially. It means two things:
  + with fixed $D$, it becomes less likely to find a linear separable set of random generated points when $N$ increases.
 
 
-It is interesting to analyse the ratio $\frac{C(N,D)}{2^N}$. The graphic above shows this relation.
+It is interesting to analyse the ratio $\frac{C(N,D)}{2^N}$, since $2^N$ is the number of all possible input sets with size $N$ for a binary classification. The graphic above shows this relation.
 
 ![cover theorem_1 jpg](https://github.com/ancpazambuja/phd/assets/36957087/b4a5e1a7-70cd-4299-abc6-a20797a43528)
 
