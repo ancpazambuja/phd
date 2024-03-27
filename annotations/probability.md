@@ -52,7 +52,7 @@ $$P(X \text{ is odd}) = P( \\{1\\} \cup \\{3\\} \cup \\{5\\} ) = P(\\{1\\}) + P(
 ## Classical View of Probability
 **Laplace (1814)**
 
-For equiprobable outcomes, $P(a \in \Omega) = \frac{1}{|\Omega|}$. 
+For equiprobable outcomes, $P(a) = \frac{1}{|\Omega|}; \forall a \in \Omega$. 
 Thus, we use tools such as combinatorial analysis and set theory to count the number of outcomes in some event $A \in \mathcal{F}$ 
 in order to calculate:
 
