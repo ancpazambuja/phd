@@ -18,6 +18,24 @@ Focus on the problems:
 - tomography,
 - FWI,
 - MS-FWI (Multiscale FWI),
-- Reflectivity and impedance model building,
-- 
-Classifies the solutions in 4 types: **End-to-end**, **ss**
+- Reflectivity and impedance model building.
+
+#### DL Solutions Classification
+
+|DL FOR FWI PERFORMANCE ENHANCEMENT|
+|-------|
+|Regularizing FWI using probability map of salt bodies |
+  
+
+|END-TO-END SEISMIC INVERSION DLI|
+|-------|
+|MLP-based architectures|
+|Semblance as input for CNN-based architectures|
+|Seismic data as input for CNN-based architectures|
+|Encoder–decoder architectures|
+|Recurrent DL architectures|
+
+|ADVANCED DL ARCHITECTURES|
+|-------|
+|Deep generative modeling|
+|Physics-guided architectures|
