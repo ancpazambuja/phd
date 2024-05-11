@@ -42,5 +42,25 @@ Focus on the problems:
 |Physics-guided architectures|
 
 ---
+### 2023 - Farbod Khosro Anjom, Francesco Vaccarino, and Laura Valentina Socco, [Machine learning for seismic exploration: Where are we and how far are we from the holy grail?](https://library.seg.org/doi/10.1190/geo2023-0129.1)
 
+#### Interesting thinking
+"*... is the goal of science to understand or predict? Alkhalifah (2022) believes, that
+in the age of data science, we are moving back to predictive models
+that can resolve many limitations of the physical models. He defines
+ML as 'a very extensive numerical tool, nothing more and nothing
+less, which is based on optimization.'*"
+
+#### Motivation for DL Solutions
+The main driver for moving to fully data-driven methods is the
+idea of mitigating some drawbacks of the current technologies and
+methods.
+
+1. **Efficiency**: traditional methods relies in complex workflows which are based on analysis, tests and evalutions carried out with a trial and error approach and demands time and expertise. It would be very atrractive to have alternatives to directly provide results on a computer-based process whithout the need to make decisions.
+   
+1. **Bias**: the decisions made during complex workflows lead to uncontrolled bias and results are dificult to reproduce. ML-based solutions  may allow to obtain more repeatable and objective results.
+
+1. **Effectiveness**: every processing and interpretation technique has intrinsic limitations and, according to the method and choices, the results
+will allow us to “see” different things. The objective here is to have methods that automatically provide high-quality results, reflecting
+rich information about the subsurface.
 
