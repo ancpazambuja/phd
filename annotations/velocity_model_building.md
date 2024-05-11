@@ -64,3 +64,9 @@ methods.
 will allow us to “see” different things. The objective here is to have methods that automatically provide high-quality results, reflecting
 rich information about the subsurface.
 
+#### DL for Seismic's Challenges
+"*We look at these new developments as a potential holy grail of
+seismic exploration where the raw data are given to a machine that
+provides automatically the best and most informative model in an efficient manner.*"
+
+
