@@ -4,7 +4,8 @@
 
 ### 2019 - Yang, Fangshu, Ma, Jianwei, [Deep-learning inversion: a next generation seismic velocity-model building method](https://library.seg.org/doi/full/10.1190/geo2018-0249.1)
 
-      
+---
+
 ### 2021 - A. Adler, M. Araya-Polo and T. Poggio, [Deep Learning for Seismic Inverse Problems: Toward the Acceleration of Geophysical Analysis Workflows](https://ieeexplore.ieee.org/abstract/document/9363496)
 
 
@@ -39,3 +40,7 @@ Focus on the problems:
 |-------|
 |Deep generative modeling|
 |Physics-guided architectures|
+
+---
+
+
