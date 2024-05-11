@@ -67,6 +67,24 @@ rich information about the subsurface.
 #### DL for Seismic's Challenges
 "*We look at these new developments as a potential holy grail of
 seismic exploration where the raw data are given to a machine that
-provides automatically the best and most informative model in an efficient manner.*"
+provides automatically the best and most informative model in an efficient manner. 
+This idea undoubtedly represents a revolution in the
+way we carry out seismic processing and interpretation, but many
+issues related to ML implementation must be addressed*"
+
+
+|Challenges|
+|-----|
+| The complexity in the relationship between the model and the data in seismic exploration is incomparable to most of the problems that are now routinely solved by ML techniques. For example, the wave propagation inside the earth is much more complex than the wave propagation inside human organs that is used for medical imaging|
+|*Transfer learning from other areas are dificult, actualy completely useless most of time*|
+| Recquires lots of labeled data, which are scarse for real datasets |
+|*Synthetic data often miss important characteristics from real noisy field data*|
+
+
+#### Where are we on our path to search for the holy grail?
+
+
+
+
 
 
