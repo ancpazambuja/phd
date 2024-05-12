@@ -81,8 +81,19 @@ issues related to ML implementation must be addressed*"
 |*Synthetic data often miss important characteristics from real noisy field data*|
 
 
-#### Where are we on our path to search for the holy grail?
+#### WHow far are we from the holy grail?
+Today most research is devoted to makeing some processing or interpretation steps of the traditional workflow more efficient, effective, and
+unbiased. 
 
+Therefore, the main question is: **Where are we on our path to search for the holy grail?**
+
+To answer this question, the authors considered the major literature repositories in the field of seismic exploration (SEG Digital
+Library and EAGE EarthDoc) between 2010 and 2021 and analyzed more than 500 ML-based publications. Most of the publications were from
+the EAGE annual conference, the SEG technical program, and GEOPHYSICS. 
+
+**Growth:**
+The use of DL for seismic processing and interpretation has exponentially expanded
+in the past 10 years, even at a faster pace compared with other industries (mainly after 2016). But the absolute numbers are still very very below other areas (1000 against 550.000 per year).
 
 
 
