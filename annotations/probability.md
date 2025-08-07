@@ -4,7 +4,7 @@ Formally (somewhat), Kolmogorov defined these axioms below:
 
 - K0: a non-deterministic experiment can be described by the probability space $(\Omega, \mathcal{F}, P)$, where:
   - $\Omega$ is the sample space (set of possible outcomes),
-  - $\mathcal{F}$ is the set of possible events ( $\mathcal{P}(\Omega)$, power set of $\Omega$ ) and
+  - $\mathcal{F}$ is the set of possible events ( $\mathbb{P}(\Omega)$, power set of $\Omega$ ) and
   - $P: \mathcal{F} \rightarrow \mathbb{R}$ is the probability function.
 
 - K1: Non-negativity::
