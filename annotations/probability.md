@@ -44,7 +44,7 @@ $$X = \\{ 2, 4, 2, 1, 5, 3, 4, 5, 6, 1, 6, 3 \\}$$
 
 And we may ask the probability of getting an odd number:
 
-$$P(X \text{ is odd}) = P( \\{1\\} \cup \\{3\\} \cup \\{5\\} ) = P(\\{1\\}) + P(\\{3\\} + P(\\{5\\}) = \frac{hist(1) + hist(3) + hist(5)}{12} = \frac{6}{12} = 0,5$$
+$$P(X \text{ is odd}) = P( \\{1\\} \cup \\{3\\} \cup \\{5\\} ) = P(\\{1\\}) + P(\\{3\\}) + P(\\{5\\}) = \frac{hist(1) + hist(3) + hist(5)}{12} = \frac{6}{12} = 0,5$$
 
 **Note:** "X is odd" is an event (e.g. $A=${1, 3, 5}).
 
