@@ -29,7 +29,7 @@ A random variable is a collection of outcomes from an experiment run several tim
 
 A random variable X can be defined by enumeration: 
 
-$X = ${ $x_1, x_2, x_3, x_4, ..., x_N$ } from which we can build a histogram. In this context,
+$X = \\{ x_1, x_2, x_3, x_4, ..., x_N \\}$ from which we can build a histogram. In this context,
 we can define: 
 
 $P(X=x_i) = \frac{hist(x_i)}{N}$
@@ -114,4 +114,24 @@ The same approach above can be used for discrete random variables.
 **Probability Mass Function (PMF)**
 
 $$p(x) = P(X=x)$$
+
+# Statistical Inference
+
+Statitiscal inference, or "learning" as it is called in computer science, is the process of using data to infer the distribution from which the data was generated.
+ 
+So, in statistical learning, given a sample $X_1, X_2, X_3, ..., X_n$ from the unknown distribution $\mathcal{F}$, how do we infer $\mathcal{F}$?
+
+## Statistical Model
+Be $\mathcal{F} = \\{f_{\theta}(x)\\}$ a family of predefined functions, where $f_{\theta}(x)$ means $f$ is parameterized by $\theta$. 
+
+For example, an statistical model, $\mathcal{F}$, could be a family of linear functions if $\theta = \\{m,b\\}$ and $f(x) = mx + b$. In which case, we could write: 
+$$\mathcal{F} = \\{ f_{m,b}(x) = mx + b; m \in \mathbb{R}, b \in \mathbb{R}\\}$$
+
+Another example, could be a family of normal distributions:
+
+$$\mathcal{F} = \\{ f_{\mu,\sigma}(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2} {(\frac{x-\mu}{\sigma})}^2}; \mu \in \mathbb{R}, \sigma \in \mathbb{R^+}\\}$$
+
+$$X \sim \mathcal{N}(\mu, \sigma^2)$$
+
+
 
