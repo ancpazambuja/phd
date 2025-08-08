@@ -119,7 +119,7 @@ $$p(x) = P(X=x)$$
 
 Statitiscal inference, or "learning" as it is called in computer science, is the process of using data to infer the distribution from which the data was generated.
  
-So, in statistical learning, given a sample $X_1, X_2, X_3, ..., X_n$ from the unknown distribution $\mathcal{F}$, how do we infer $\mathcal{F}$?
+So, in statistical learning, given a sample $X_1, X_2, X_3, ..., X_n \sim F$, how do we infer $F$?
 
 ## Statistical Model
 Be $\mathcal{F} = \\{f_{\theta}(x)\\}$ a family of predefined functions, where $f_{\theta}(x)$ means $f$ is parameterized by $\theta$. 
@@ -131,7 +131,7 @@ Another example, could be a family of normal distributions:
 
 $$\mathcal{F} = \\{ f_{\mu,\sigma}(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2} {(\frac{x-\mu}{\sigma})}^2}; \mu \in \mathbb{R}, \sigma \in \mathbb{R^+}\\}$$
 
-$$X \sim \mathcal{N}(\mu, \sigma^2)$$
+$$ \mathbb{R} \rightarrow \mathcal{R} \rightarrow R $$
 
 
 
