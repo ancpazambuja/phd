@@ -89,7 +89,7 @@ in terms of special functions.
 
 $$F(x) = P(X < x) = {\int}_{-\infty}^{x} f(x')dx'$$
 
-**Probability Distribution Function (PDF)**
+**Probability Density Function or Probability Distribution Function (PDF)**
 
 From the __fundamental theorem of calculus__:
 
