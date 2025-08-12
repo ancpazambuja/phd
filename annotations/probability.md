@@ -185,7 +185,23 @@ Point estimation refers to providing a good approximation to an unkown quantity 
 
 By convetion, we call the unknown quantity and its point estimation, respectivelly, $\theta$ and $\hat{\theta}$.
 
+Formally, given a vector of IID random variables $X_1, X_2,..., X_n \sim F$, a point estimation $\hat{\theta}$ is a function of $X_i$:
 
+$$\hat{\theta} = g(X_1, X_2,..., X_n)$$
+
+Attention for the fact that $\theta$ is a value while $\hat{\theta}$ is a function of the data $X$, so its is a random variable.
+
+We define the bias of an estimator by:
+
+$$bias(\hat{\theta}) = \mathbb{E}[\hat{\theta}] - \theta$$
+
+So, by definition, we say a estimator is **unbiased** if $bias(\hat{\theta}) = 0 \leftrightarrow \mathbb{E}[\hat{\theta}] = \theta$.  
+
+ ### Confidence Sets
+
+ ### Hyphotesis Testing
+
+ 
 
 
 
