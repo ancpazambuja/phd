@@ -136,8 +136,24 @@ Or a family of normal distributions:
 
 $$\mathcal{F} = \\{ f_{\mu,\sigma}(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2} {(\frac{x-\mu}{\sigma})}^2}; \mu \in \mathbb{R}, \sigma \in \mathbb{R^+}\\}$$
 
+### Prediction, Regression and Classification ###
+**Supervised Learning** is an important case of ML and deserves special attention since its setup slightly differs from the classical inference problems.
 
+In the **classical inference** we aim to discover $F$ from which a random variable of interested $X$ is generated. In most cases, the distribution already describes the error. In other cases, like in physics or other sciences, we may explicit model the measurement error saying that $X = W + \sigma$ and $W \sim F$.
 
+But in supervised learning, we have what is called the **regression setup**, which contains two types of variables: **independent variable**, $X$, and **dependent variable**, $Y$. The hypothesis in supervised learning is that $Y$ depend on $X$, i.e., for each value of $x_i$ we associate an **outcome** $y_i$.
 
+In most cases, we would like to predict a future value of Y from a new value of X or, more formally, we would like to know the **regression function**:
 
+$$r(X) = \mathbb{E}(Y|X)$$.
+
+The act of evaluating $y = r(x)$ is called **prediction**. When $Y$ is discrete, we have a **classification** and when $Y$ is continuous, we have a **regression**.
+
+We can always rewrite a regression model as:
+
+$$Y = r(X) + \epsilon$$
+
+where $\epsilon$ is called **irreducible error**, it is independent from $X$ and $\mathbb{E}(\epsilon) = 0$. In this formulation, $r$ accounts for the systematic information $X$ provides about $Y$.
+ 
+It is important to notice $\mathbb{E}(\epsilon)=0$ is consequence of the definition $r(X)=\mathbb{E}(Y|X)$.
 
