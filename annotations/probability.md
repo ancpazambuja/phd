@@ -169,6 +169,24 @@ Since $r(X)=\mathbb{E}[Y|X]$:
 
 $$\mathbb{E}[\mathbb{E}[Y|X] - r(X)] = \mathbb{E}[r(X) - r(X)] = \mathbb{E}[0] = 0$$
 
-## Point Estimation ##
-Point 
+## Typical Inferential Problems ##
+In statistical learning, most of the time we are facing one of these three problems:
+ - point estimation;
+ - confidence sets;
+ - hypothesis testing.
+
+### Point Estimation
+Point estimation refers to providing a good approximation to an unkown quantity of interest like: 
+- a parameter of a parametric model;
+- a cdf $F$;
+- a PDF $f$;
+- a regression function $r$;
+- a future value of $Y$ given a new value of $X$.
+
+By convetion, we call the unknown quantity and its point estimation, respectivelly, $\theta$ and $\hat{\theta}$.
+
+
+
+
+
 
