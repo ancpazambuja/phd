@@ -157,17 +157,17 @@ where $\epsilon$ is called **irreducible error**. It is independent from $X$ and
  
 It is important to notice $\mathbb{E}[\epsilon]=0$ is consequence of the definition $r(X)=\mathbb{E}[Y|X]$. In fact:
 
-$$Y = r(X) + \epsilon \leftarrow \epsilon = Y - r(X)$$
+$$Y = r(X) + \epsilon \rightarrow \epsilon = Y - r(X)$$
 
 $$ \mathbb{E}[\epsilon] = \mathbb{E}[Y - r(X)]$$
 
-Using the **Law of Irerated Expectation** we have:
+Using the **Law of Iterated Expectation** we have:
 
-$$\mathbb{E}[Y - r(X)] = \mathbb{E}[\mathbb{E}[Y-r(X)|X]] = \mathbb{E}[\mathbb{E}[Y|X] - \mathbb{E}[r(X)|X]] = \mathbb{E}[\mathbb{E}[Y|X] - \mathbb{E}[r(X)]] $$
+$$\mathbb{E}[Y - r(X)] = \mathbb{E}[\mathbb{E}[Y-r(X)|X]] = \mathbb{E}[\mathbb{E}[Y|X] - \mathbb{E}[r(X)|X]] = \mathbb{E}[\mathbb{E}[Y|X] - r(X)] $$
 
 Since $r(X)=\mathbb{E}[Y|X]$:
 
-$$\mathbb{E}[\mathbb{E}[Y-r(X)|X]] = $$
+$$\mathbb{E}[\mathbb{E}[Y|X] - r(X)] = \mathbb{E}[r(X) - r(X)] = \mathbb{E}[0] = 0$$
 
 ## Point Estimation ##
 Point 
