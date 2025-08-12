@@ -126,7 +126,7 @@ A set, $\mathcal{F}$, of functions is a statistical model when these functions a
 
 An statitiscal model may take the form $\mathcal{F} = \\{f_{\theta}(x) : \theta \in \Theta\\}$, where $f_{\theta}(x)$ means $f$ is parameterized by $\theta$ from a set $\Theta$ of possible parameters.
 
-When \theta has finite number of parameters we say the $\mathcal{F}$ if a **parametric model**. If $\mathcal{F}$ can't be defined by a finite number of parameters, we say $\mathcal{F}$ is a **nonparametric model**. 
+When $\theta$ has finite number of parameters we say the $\mathcal{F}$ if a **parametric model**. If $\mathcal{F}$ can't be defined by a finite number of parameters, we say $\mathcal{F}$ is a **nonparametric model**. 
 
 An example of parametric model could be a family of linear functions:
 
