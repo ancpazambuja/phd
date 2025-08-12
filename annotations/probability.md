@@ -122,16 +122,22 @@ Statitiscal inference, or "learning" as it is called in computer science, is the
 So, in statistical learning, given a sample $X_1, X_2, X_3, ..., X_n \sim F$, how do we infer $F$?
 
 ## Statistical Model
-Be $\mathcal{F} = \\{f_{\theta}(x)\\}$ a family of predefined functions, where $f_{\theta}(x)$ means $f$ is parameterized by $\theta$. 
+A set, $\mathcal{F}$, of functions is a statistical model when these functions are distributions, regressions or densities. 
 
-For example, an statistical model, $\mathcal{F}$, could be a family of linear functions if $\theta = \\{m,b\\}$ and $f(x) = mx + b$. In which case, we could write: 
+An statitiscal model may take the form $\mathcal{F} = \\{f_{\theta}(x) : \theta \in \Theta\\}$, where $f_{\theta}(x)$ means $f$ is parameterized by $\theta$ from a set $\Theta$ of possible parameters.
+
+When \theta has finite number of parameters we say the $\mathcal{F}$ if a **parametric model**. If $\mathcal{F}$ can't be defined by a finite number of parameters, we say $\mathcal{F}$ is a **nonparametric model**. 
+
+An example of parametric model could be a family of linear functions:
+
 $$\mathcal{F} = \\{ f_{m,b}(x) = mx + b; m \in \mathbb{R}, b \in \mathbb{R}\\}$$
 
-Another example, could be a family of normal distributions:
+Or a family of normal distributions:
 
 $$\mathcal{F} = \\{ f_{\mu,\sigma}(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2} {(\frac{x-\mu}{\sigma})}^2}; \mu \in \mathbb{R}, \sigma \in \mathbb{R^+}\\}$$
 
-$$ \mathbb{R} \rightarrow \mathcal{R} \rightarrow R $$
+
+
 
 
 
