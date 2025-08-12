@@ -145,7 +145,7 @@ But in supervised learning, we have what is called the **regression setup**, whi
 
 In most cases, we would like to predict a future value of Y from a new value of X or, more formally, we would like to know the **regression function**:
 
-$$r(X) = \mathbb{E}(Y|X)$$.
+$$r(X) = \mathbb{E}[Y|X]$$.
 
 The act of evaluating $y = r(x)$ is called **prediction**. When $Y$ is discrete, we have a **classification** and when $Y$ is continuous, we have a **regression**.
 
@@ -153,7 +153,22 @@ We can always rewrite a regression model as:
 
 $$Y = r(X) + \epsilon$$
 
-where $\epsilon$ is called **irreducible error**, it is independent from $X$ and $\mathbb{E}(\epsilon) = 0$. In this formulation, $r$ accounts for the systematic information $X$ provides about $Y$.
+where $\epsilon$ is called **irreducible error**. It is independent from $X$ and $\mathbb{E}(\epsilon) = 0$. In this formulation, $r$ accounts for the systematic information $X$ provides about $Y$.
  
-It is important to notice $\mathbb{E}(\epsilon)=0$ is consequence of the definition $r(X)=\mathbb{E}(Y|X)$.
+It is important to notice $\mathbb{E}[\epsilon]=0$ is consequence of the definition $r(X)=\mathbb{E}[Y|X]$. In fact:
+
+$$Y = r(X) + \epsilon \leftarrow \epsilon = Y - r(X)$$
+
+$$ \mathbb{E}[\epsilon] = \mathbb{E}[Y - r(X)]$$
+
+Using the **Law of Irerated Expectation** we have:
+
+$$\mathbb{E}[Y - r(X)] = \mathbb{E}[\mathbb{E}[Y-r(X)|X]] = \mathbb{E}[\mathbb{E}[Y|X] - \mathbb{E}[r(X)|X]] = \mathbb{E}[\mathbb{E}[Y|X] - \mathbb{E}[r(X)]] $$
+
+Since $r(X)=\mathbb{E}[Y|X]$:
+
+$$\mathbb{E}[\mathbb{E}[Y-r(X)|X]] = $$
+
+## Point Estimation ##
+Point 
 
