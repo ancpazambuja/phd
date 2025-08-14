@@ -1,9 +1,15 @@
 # Fisrt Notes
 There are several ways to explain the ideas below. Each author has chosen his own strategy depend on the target readers, objectivity, etc.
-I have read some sources of information (wikipedia, youtube, books and lectures) with different levels of details and have tried to understand (I knew just the about probability and statistics) and write down what I could understand. The main objective of this text is build a summary I think will be useful for me as a (somewhat) quick reference.
+I have read some sources of information (wikipedia, youtube, books and lectures) with different levels of details and have tried to understand (I start knowing just the basics about probability and statistics) and have written down what I could understand. 
 
-While writing this test, I have realized I prefer keep some mathmatical formalism,  but not too much.
+The main objective here is keeping a summary I think will be useful for me as a (somewhat) quick reference.
 
+While writing this text, I have realized I prefer keep some mathmatical formalism, as much as I can keep (and it is not too much).
+
+But, as I mentioned before, there are ways of doing this. So, I will write some concepts I will not mentioned in the main text but 
+they are there, implicitly. Just to mention a few: measure, $\sigma$-field, finite measure, $\sigma$-finite measure, measurable space ($\Omega$, P),
+measure space ($\Omega$, \mathcal{F}, P).
+  
 
 # Probability
 Formally (somewhat), Kolmogorov defined these axioms below:
