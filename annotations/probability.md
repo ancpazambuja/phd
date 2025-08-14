@@ -8,7 +8,7 @@ While writing this text, I have realized I prefer keep some mathmatical formalis
 
 But, as I mentioned before, there are ways of doing this. So, I will write some concepts I will not mentioned in the main text but 
 they are there, implicitly. Just to mention a few: measure, $\sigma$-field, finite measure, $\sigma$-finite measure, measurable space ($\Omega$, P),
-measure space ($\Omega$, \mathcal{F}, P).
+measure space ($\Omega$, $\mathcal{F}$, P).
   
 
 # Probability
