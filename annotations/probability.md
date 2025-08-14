@@ -1,3 +1,9 @@
+# Fisrt Notes
+There are several ways to explain the ideas below. Each author has chosen his own strategy depend on the target readers, objectivity, etc.
+I have read some sources of information (wikipedia, youtube, books and lectures) with different levels of details and have tried to understand (I knew just the about probability and statistics) and write down what I could understand. The main objective of this text is build a summary I think will be useful for me as a (somewhat) quick reference.
+
+While writing this test, I have realized I prefer keep some mathmatical formalism,  but not too much.
+
 
 # Probability
 Formally (somewhat), Kolmogorov defined these axioms below:
