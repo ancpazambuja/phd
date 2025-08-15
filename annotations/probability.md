@@ -50,8 +50,9 @@ A random variable is a collection of outcomes from an experiment run several tim
 
 A random variable X can be defined by enumeration: 
 
-$X = \\{ x_1, x_2, x_3, x_4, ..., x_N \\}$ from which we can build a histogram. In this context,
-we can define: 
+$X = \\{ x_1, x_2, x_3, x_4, ..., x_N \\}$ from which we can build a histogram. 
+
+In this context, we can define: 
 
 $P(X=x_i) = \frac{hist(x_i)}{N}$
 
@@ -67,7 +68,9 @@ And we may ask the probability of getting an odd number:
 
 $$P(X \text{ is odd}) = P( \\{1\\} \cup \\{3\\} \cup \\{5\\} ) = P(\\{1\\}) + P(\\{3\\}) + P(\\{5\\}) = \frac{hist(1) + hist(3) + hist(5)}{12} = \frac{6}{12} = 0,5$$
 
-**Note:** "X is odd" is an event (e.g. $A=${1, 3, 5}).
+**Note 1:** "X is odd" is an event (e.g. $A=${1, 3, 5}).
+
+**Note 2:** Formally a random variable is a measurable function $\mu : \Omega_1 \rightarrow \Omega_2$, where $\\{\Omega_1, \mathcal{F}_1\\}$ is a measurable space and $\\{\Omega_2, \mathcal{F}_2\\}$ is another measurable space.
 
   
 ## Classical View of Probability
@@ -141,6 +144,10 @@ $$p(x) = P(X=x)$$
 Statitiscal inference, or "learning" as it is called in computer science, is the process of using data to infer the distribution from which the data was generated.
  
 So, in statistical learning, given a sample $X_1, X_2, X_3, ..., X_n \sim F$, how do we infer $F$?
+
+**Philosophycal note**: 
+
+In inference we see just the random variable, which is a mapping over the true measurable space $\\{\Omega_1\\, \mathcal{F}_1\\}$ to another measurable space $\\{\Omega_2\\, \mathcal{F}_2\\}$. We don't see the actual sample space $\Omega_1$ and yet we could learn the distribution over $\Omega_2$. This is similar of Plato called "Allegory of the cave".
 
 ## Statistical Model
 A set, $\mathcal{F}$, of functions is a statistical model when these functions are distributions, regressions or densities. 
