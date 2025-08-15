@@ -8,7 +8,7 @@ While writing this text, I have realized I prefer keep some mathematical formali
 
 But, as I mentioned before, there are ways of doing this. I choose to omit some fundamental knowledge in the main text, but keep in mind they are there implicitly. 
 I will start with the notion of **probability space**, but behind it there are many concepts which builds the necessary mathematical fundations like:
-- **$\sigma$-field** or $\sigma$-algebra  $\mathcal{U} \subseteq 2^\Omega$,
+- **$\sigma$-field** or $\sigma$-algebra  $\mathcal{F} \subseteq 2^\Omega$,
 - **topology** $\mathcal{T} \subseteq 2^\Omega$,
 - **measurable space**, $\\{\Omega, \mathcal{F}\\}$,
 - **topological space**, $\\{\Omega, \mathcal{T}\\}$,
