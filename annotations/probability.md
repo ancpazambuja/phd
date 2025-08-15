@@ -4,7 +4,7 @@ I have read some sources of information (wikipedia, youtube, books and lectures)
 
 The main objective here is keeping a summary I think will be useful for me as a (somewhat) quick reference.
 
-While writing this text, I have realized I prefer keep some mathmatical formalism, as much as I can keep (and it is not too much).
+While writing this text, I have realized I prefer keep some mathematical formalism, as much as I can keep (and it is not too much).
 
 But, as I mentioned before, there are ways of doing this. So, I will write some concepts I will not mentioned in the main text but 
 they are there, implicitly. Just to mention a few: measure, $\sigma$-field, finite measure, $\sigma$-finite measure, measurable space ($\Omega$, P),
