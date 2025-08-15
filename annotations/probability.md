@@ -1,5 +1,5 @@
 # Fisrt Notes
-There are several ways to explain the ideas below. Each author has chosen his own strategy depend on the target readers, objectivity, etc.
+There are several ways to explain the ideas below. Each author has chosen his own strategy depend on the target readers, goals and so on.
 I have read some sources of information (wikipedia, youtube, books and lectures) with different levels of details and have tried to understand (I start knowing just the basics about probability and statistics) and have written down what I could understand. 
 
 The main objective here is keeping a summary I think will be useful for me as a (somewhat) quick reference.
