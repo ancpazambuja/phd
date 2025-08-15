@@ -6,8 +6,8 @@ The main objective here is keeping a summary I think will be useful for me as a 
 
 While writing this text, I have realized I prefer keep some mathematical formalism, as much as I can keep (and it is not too much).
 
-But, as I mentioned before, there are ways of doing this. So, I will write some concepts I will not mentioned in the main text but 
-they are there, implicitly. Just to mention a few: measure, $\sigma$-field, finite measure, $\sigma$-finite measure, measurable space ($\Omega$, P),
+But, as I mentioned before, there are ways of doing this. I choose to omit some fundamental knowledge in the main text, but keep in mind they are there implicitly. 
+Just to mention a few: measure, $\sigma$-field, finite measure, $\sigma$-finite measure, measurable space ($\Omega$, P),
 measure space ($\Omega$, $\mathcal{F}$, P).
   
 
