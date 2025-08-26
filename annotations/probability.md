@@ -225,6 +225,15 @@ $$bias(\hat{\theta}) = \mathbb{E}[\hat{\theta}] - \theta$$
 
 So, by definition, we say a estimator is **unbiased** if $bias(\hat{\theta}) = 0 \leftrightarrow \mathbb{E}[\hat{\theta}] = \theta$.  
 
+
+### Bootstrap
+**Draft:** Briefly, is a method to give additional information about an estimator without having access to more samples of the distribution. 
+
+It is based on the premiss below:
+
+$$ X^* \sim X \sim \mathcal{F}$$
+
+
  ### Confidence Sets
  Draft: Confidence sets are a way to measure how confidence we are about the process that generate an estimation. It is often misunderstood as a way to measure the condidence about the measure itself. 
 
