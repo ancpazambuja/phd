@@ -226,12 +226,7 @@ $$bias(\hat{\theta}) = \mathbb{E}[\hat{\theta}] - \theta$$
 So, by definition, we say a estimator is **unbiased** if $bias(\hat{\theta}) = 0 \leftrightarrow \mathbb{E}[\hat{\theta}] = \theta$.  
 
 
-### Bootstrap
-**Draft:** Briefly, is a method to give additional information about an estimator without having access to more samples of the distribution. 
 
-It is based on the premiss below:
-
-$$ X^* \sim X \sim \mathcal{F}$$
 
 
  ### Confidence Sets
@@ -242,7 +237,38 @@ It can be built to any estimative based on a random variable.
 
  ### Hyphotesis Testing
 
- 
+
+# Appendix
+
+## Law of Large Numbers (LLN) and Central Limit Theorem (CLT)
+Consider $X \sim \mathcal{F}$ and let:
+- $\mu = \mathbb{E}[\mathcal{F}]$ be the unknown distribution mean (population mean);
+- $x_i, i \in {1,2,...,n}$ be a distribution sample;
+- $n$ be the sample size;
+- $\theta(x) = \bar{x}$ be the sample mean.
+
+LLN tells $\bar{x} \rightarrow \mu$ when $n \rightarrow \infty$.
+
+And CLT tells the distribution of $\bar{x}$ tends to a normal distribution when $n \rightarrow \infty$ - even when $\mathcal{F}$ is not normal.
+
+ ## Bootstrap
+**Draft:** Briefly, is a method to give additional information about an estimator without having access to more samples of the distribution. 
+
+It is based on the premiss below:
+
+$$ X^{*} \sim X \sim \mathcal{F}$$
+
+So, we can infer the distribution of $\mathcal{F}$ from bootstrap samples $X^{\*}$. 
+
+A bootstrap sample, $X^{\*}$, is a new artificial sample with size $n$ where each value is randomly choosen from $X$ with replacement.
+
+So, if we would like to infer the statistic $R(X,\mathcal{F})$, we can do this by calculating $m$ bootstrap samples, $X_{j}^{\*}$, from $X$ and building 
+$m$ different statistics $R_j(X_j^{\*}, \hat{\mathcal{F}})$, where $j \in {1,2,...,m}$. 
+
+With this set of bootstrap statistics we can build confidence intervals, histograms, etc.
+
+
+
 
 
 
