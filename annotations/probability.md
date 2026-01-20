@@ -229,11 +229,13 @@ So, by definition, we say a estimator is **unbiased** if $bias(\hat{\theta}) = 0
 
 
 
- ### Confidence Sets
+ ### Confidence Intervals/Sets
  Draft: Confidence sets are a way to measure how confidence we are about the process that generate an estimation. It is often misunderstood as a way to measure the condidence about the measure itself. 
 
 It can be built to any estimative based on a random variable.
- 
+
+#### Empirical Confidence Intervals/Sets
+ In many practical cases, the true distribution is unkown and we have access just to one sample from the true distribution. If we couldn't assume as prior knowledge the pdf or the true distribution, we have to rely in methods like bootstraping to build confidence intervals. In this case, we say we are building **empirical confidence intervals**.
 
  ### Hyphotesis Testing
 
