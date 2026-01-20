@@ -275,7 +275,7 @@ So, we can infer the distribution of the statistic given by R from bootstrap sam
 A bootstrap sample, $X^′$, is a new artificial sample with size $n$ where each value is randomly choosen from $X^*$ with replacement.
 
 So, if we would like to infer the statistic $R(X,\mathcal{F})$, we can do this by calculating $m$ bootstrap samples, $X_{j}^′$, from $X^*$ and building 
-$m$ different statistics $R_j(X_j^′, \hat{\mathcal{\hat{F}}})$, where $j \in {1,2,...,m}$. 
+$m$ different statistics $R_j(X_j^′, \mathcal{\hat{F}})$, where $j \in {1,2,...,m}$ and $\mathcal{\hat{F}}$ is the empirical distribution of $X^′$. 
 
 With this set of bootstrap statistics we can build confidence intervals, histograms, etc.
 
