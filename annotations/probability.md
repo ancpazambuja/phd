@@ -235,10 +235,13 @@ So, by definition, we say a estimator is **unbiased** if $bias(\hat{\theta}) = 0
 It can be built to any estimative based on a random variable.
 
 #### Empirical Confidence Intervals/Sets
- In many practical cases, the true distribution is unkown and we have access just to one sample from the true distribution. If we couldn't assume as prior knowledge the pdf or the true distribution, we have to rely in methods like bootstraping to build confidence intervals. In this case, we say we are building **empirical confidence intervals**.
+ In many practical cases, the true distribution is unkown and we have access to just one sample from the true distribution. If we couldn't assume as prior knowledge the pdf or the true distribution, we have to rely in methods like bootstraping to build confidence intervals. In this case, we say we are building **empirical confidence intervals**.
 
  ### Hyphotesis Testing
 
+(to do)
+
+------------------------------------------------------------------------------------------
 
 # Appendix
 
@@ -254,23 +257,188 @@ LLN tells $\bar{x} \rightarrow \mu$ when $n \rightarrow \infty$.
 And CLT tells the distribution of $\bar{x}$ tends to a normal distribution when $n \rightarrow \infty$ - even when $\mathcal{F}$ is not normal.
 
  ## Bootstrap
-**Draft:** Briefly, is a method to give additional information about an estimator without having access to more samples of the distribution. 
+**Draft:** 
+
+Briefly, it is a method to obtain additional information about an estimator, $\mathbb{R}$, without having access to more samples of the distribution. 
 
 It is based on the premiss below:
 
-$$ X^{*} \sim X \sim \mathcal{F}$$
 
-So, we can infer the distribution of $\mathcal{F}$ from bootstrap samples $X^{\*}$. 
+$$LLN(R(X_1^′,...,X_n^′)) \sim LLN(R(X_1^∗,...,X_n^∗)),$$
 
-A bootstrap sample, $X^{\*}$, is a new artificial sample with size $n$ where each value is randomly choosen from $X$ with replacement.
 
-So, if we would like to infer the statistic $R(X,\mathcal{F})$, we can do this by calculating $m$ bootstrap samples, $X_{j}^{\*}$, from $X$ and building 
-$m$ different statistics $R_j(X_j^{\*}, \hat{\mathcal{F}})$, where $j \in {1,2,...,m}$. 
+where $X_i^′$ is a bootstrap sample and $X_i^*$ is the original sample.
+
+
+So, we can infer the distribution of the statistic given by R from bootstrap samples $X^*$. 
+
+A bootstrap sample, $X^′$, is a new artificial sample with size $n$ where each value is randomly choosen from $X^*$ with replacement.
+
+So, if we would like to infer the statistic $R(X,\mathcal{F})$, we can do this by calculating $m$ bootstrap samples, $X_{j}^′$, from $X^*$ and building 
+$m$ different statistics $R_j(X_j^′, \hat{\mathcal{\hat{F}}})$, where $j \in {1,2,...,m}$. 
 
 With this set of bootstrap statistics we can build confidence intervals, histograms, etc.
 
+-------------------------------------------------------
+
+# Common Misconceptions (Be Careful)
+
+## About Confidence Intervals
+Confidence intervals are not claims about the parameter being estimated. They are claims about the estimator (the process which generates the estimation).
+
+**Empirical CI:** In all practical cases, when we build a confidence interval we are talking about empirical confidence interval. The true confidence interval is something we never know.
 
 
+## About Bootstrap (my conversation with Copilot)
+
+**Me**:
+I thought: **bootstrap approximates the variability of the geological distribution** and can be **used to understand the variability of the training process over a set of samples from the approximated distribution**.
+
+Is my thougth wrong? If so, why?
+
+
+**Copilot said**:
+
+
+Antonio — this is the key conceptual point, and your doubt is completely valid.
+Let me put it plainly:
+
+❗ Your thought is not exactly wrong — but it is incomplete, and fixing that incompleteness resolves the confusion.
+You said:
+
+Bootstrap approximates the variability of the geological distribution and can be used to understand the variability of the training process over a set of samples from the approximated distribution.
+
+There is one extra step in your mental model that is not correct:
+
+➤ **BOOTSTRAP DOES NOT APPROXIMATE THE VARIABILITY OF THE GEOLOGICAL DISTRIBUTION**
+Instead:
+
+⭐ **Bootstrap approximates the variability of the empirical distribution,
+not the underlying population/geological distribution.**
+
+This subtle distinction explains everything.
+
+Let’s go step by step, slowly and clearly.
+
+🎯 1. Two distributions exist
+Let’s name them:
+
+F = true geological/population distribution
+Unknown. Very complex. Manifold. Constant pdf on support.
+
+F̂ₙ = empirical distribution
+A discrete distribution that puts mass 1/n on each observed training pair.
+
+Bootstrap samples from F̂ₙ, not from F.
+
+🎯 2. **The classical misconception is this:**
+**“Bootstrap samples approximate the true distribution F.”**
+
+This is false in general.
+
+It is false for images.
+It is false for manifolds.
+It is even false for real-valued heavy-tailed distributions.
+It is false for almost every interesting real-world dataset.
+
+And **bootstrap does not require F̂ₙ ≈ F.**
+
+This was your mistaken assumption.
+
+🎯 3. So what does bootstrap approximate?
+**Bootstrap approximates: The distribution of your estimator T under F by The distribution of your estimator T under F̂ₙ.**
+
+In symbols:
+
+$$Law(T(X_1^′,...,X_n^′)) \sim Law(T(X_1^∗,...,X_n^∗)).$$
+
+Bootstrap makes no claim that:
+
+$$\hat{F}_n \sim F.$$
+
+Bootstrap only requires a much weaker statement:
+
+**Perturbations drawn from $\hat{F}_n$ affect T the same way as perturbations from $F$.
+
+This is a statement about the smoothness and stability of the estimator,
+NOT about the smoothness or continuity of the underlying F.
+
+🎯 4. Now the key point:
+**In regression with images, the estimator IS smooth enough,
+so bootstrap works even if the geological distribution is not.**
+
+This is why:
+
+Neural networks,
+least squares regression,
+kernel regression,
+random forests,
+gradient boosting
+can all be bootstrapped, regardless of the complexity of the input distribution.
+
+The estimator is stable enough under resampling that the bootstrap distribution gives you the correct variability.
+
+In other words:
+
+The bootstrap is estimating model variance, not geology variance.
+⭐ So your thought is almost correct — but missing one crucial distinction
+Let’s rewrite your idea in correct form:
+
+❌ Incorrect (your original thought):
+“Bootstrap approximates the variability of the geological distribution.”
+
+✔ Correct (the truth):
+Bootstrap approximates the variability of the empirical distribution
+and uses that to estimate the variability of the estimator.
+
+✔ Also correct:
+Bootstrap does not need to replicate geological variability.
+It only needs to replicate how the estimator responds to data perturbations.
+
+🎯 5. Example to make it crystal clear
+The underlying geological distribution F might lie on a crazy manifold.
+The empirical distribution F̂ₙ is just n atoms.
+
+Bootstrap resamples those atoms:
+
+It will never produce a new geological structure.
+It will never approximate the manifold.
+It does not mimic geological variability.
+But:
+
+If you changed your dataset slightly,
+your trained neural network would change slightly,
+bootstrap resampling mimics this kind of perturbation.
+Thus bootstrap gives a good estimate of:
+
+variance of MSE
+variance of predictions
+stability of training
+confidence intervals
+Even though it gives a terrible estimate of F.
+
+And that’s fine, because that’s not what you need.
+
+⭐ Final Summary (the exact answer to your confusion)
+Your mistake was assuming that bootstrap works by approximating the data distribution.
+It does not.
+
+Bootstrap works by approximating:
+
+The distribution of the estimator under hypothetical resampling,
+not the distribution of the underlying geological data.
+
+And because neural networks + MSE regression are smooth enough functionals of the empirical distribution, bootstrap is valid for:
+
+estimating MSE confidence intervals
+evaluating training stability
+estimating generalization variability
+computing prediction uncertainty (via bagging)
+even when:
+
+the true pdf is constant on a manifold
+the support is highly structured
+the data distribution is unknown or discontinuous
 
 
 
