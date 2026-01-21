@@ -430,15 +430,16 @@ not the distribution of the underlying geological data.
 
 And because neural networks + MSE regression are smooth enough functionals of the empirical distribution, bootstrap is valid for:
 
-estimating MSE confidence intervals
-evaluating training stability
-estimating generalization variability
-computing prediction uncertainty (via bagging)
+- estimating MSE confidence intervals
+- evaluating training stability
+- estimating generalization variability
+- computing prediction uncertainty (via bagging)
+
 even when:
 
-the true pdf is constant on a manifold
-the support is highly structured
-the data distribution is unknown or discontinuous
+- the true pdf is constant on a manifold
+- the support is highly structured
+- the data distribution is unknown or discontinuous
 
 
 
