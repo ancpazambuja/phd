@@ -358,7 +358,7 @@ $$\hat{F}_n \sim F.$$
 
 Bootstrap only requires a much weaker statement:
 
-**Perturbations drawn from $\hat{F}_n$ affect T the same way as perturbations from $F$.
+**Perturbations drawn from $\hat{F}_n$ affect T the same way as perturbations from $F$.**
 
 This is a statement about the smoothness and stability of the estimator,
 NOT about the smoothness or continuity of the underlying F.
