@@ -164,18 +164,30 @@ Or a family of normal distributions:
 
 $$\mathcal{F} = \\{ f_{\mu,\sigma}(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2} {(\frac{x-\mu}{\sigma})}^2}; \mu \in \mathbb{R}, \sigma \in \mathbb{R^+}\\}$$
 
+In **classical inference**, we aim to estimate the parameter $\hat{\theta} \in \Theta$ such that $f_\hat{\theta}$ is a good approximation for $f_\theta$. 
+
+$\theta \in \Theta$ is called the **estimand**.
+
+$\hat{\theta} \in \Theta$ is the **estimate**.
+
+And the systematic way of estimating $\hat{\theta}$ from X is called the **estimator**, $\mathcal{A}(X)$, so that, $\hat{\theta} = \mathcal{A}(X)$.
+
 ### Prediction, Regression and Classification ###
-**Supervised Learning** is an important case of ML and deserves special attention since its setup slightly differs from the classical inference problems.
+**Supervised Learning** is an important case of ML and deserves special attention since its setup slightly differs from the classical inference problems. 
 
-In the **classical inference** we aim to discover $F$ from which a random variable of interested $X$ is generated. In most cases, the distribution already describes the error. In other cases, like in physics or other sciences, we may explicit model the measurement error saying that $X = W + \sigma$ and $W \sim F$.
-
-But in supervised learning, we have what is called the **regression setup**, which contains two types of variables: **independent variable**, $X$, and **dependent variable**, $Y$. $X$ and $Y \sim F$, the joint probability function.The hypothesis in supervised learning is that $Y$ depend on $X$, i.e., for each value of $x_i$ we associate an **outcome** $y_i$. Thus, there is a **regression function**: 
+In supervised learning, we have what is called the **regression setup**, which contains two types of variables: **independent variable**, $X$, and **dependent variable**, $Y$. $X$ and $Y \sim F$, the joint probability function.The hypothesis in supervised learning is that $Y$ depend on $X$, i.e., for each value of $x_i$ we associate an **outcome** $y_i$. Thus, there is a **regression function**: 
 
 $$r(X) = \mathbb{E}[Y|X]$$.
 
 The actual regression function, r, is unknow and, most of times, unknownable. So we have to estimate it from a sample $X \sim F$,  creating a function $\hat{r}(X)$. 
 
-The systematic way of estimating $\hat{r}$ from a sample X_i can be referenced by $\mathcal{A}(X_i)$. **$r(X)$ is the estimand, $\mathcal{A}(X_i)$ is the estimator and $\hat{r}(X)$ is the estimate.** 
+The systematic way of estimating $\hat{r}$ from a sample X_i can be referenced by $\mathcal{A}(X_i)$. 
+
+**$r(X)$ is the estimand**. 
+
+**$\mathcal{A}(X_i)$ is the estimator**. 
+
+And **$\hat{r}(X)$ is the estimate.** 
 
 With $\hat{r}(X)$, we can estimate a future value of Y from a new value of X, which is called **prediction**. When $Y$ is discrete, we have a **classification** and when $Y$ is continuous, we have a **regression**.
 
@@ -242,6 +254,10 @@ It can be built to any estimative based on a random variable.
  ### Hyphotesis Testing
 
 (to do)
+
+### Errors of Measures in Engineering
+
+In most cases, the distribution already describes the error. In other cases, like in physics or other sciences, we may explicit model the measurement error saying that $X = W + \sigma$ and $W \sim F$.
 
 ------------------------------------------------------------------------------------------
 
